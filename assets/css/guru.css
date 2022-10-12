@@ -1,0 +1,470 @@
+.nav-item{
+    list-style: none;
+}
+/* .navbar{
+    display: flex;
+} */
+
+body{
+    background-color: rgb(34, 32, 32)!important;
+    color: floralwhite!important;
+}
+
+header{
+    width: 100%;
+}
+.container{
+    background-color: black;
+    height: 10vh;
+    width: 100%!important;
+    margin: 0;
+    /* background-position: left;
+    background-size: cover; */
+}
+.navbar{
+    text-align: right;
+    padding: 20px 30px 20px 0;
+    background-color: rgb(34, 32, 32);
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+}
+.logo img{
+    margin: -20px;
+    float: left;
+    height: 61px;
+    width: 92px;
+    border: 1px solid black;
+    margin-left: 20px;
+}
+.navbar a{
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: white;
+
+    padding: 12px;
+}
+.navbar a:hover{
+    background-color: white;
+    color:black
+}
+
+.singh{
+    font-size: xxx-large;
+}
+
+/* .Arjit{
+    display: flex;
+    
+} */
+.navbar-collapse{
+    margin-left: 90%;
+}
+.navbar-brand{
+    color: black;
+    text-decoration: none;
+    width: 100px;
+    margin-right: 90px;
+}
+.navbar-nav{
+    display: flex;
+}
+.nav-link{
+    color: black;
+    margin-right: 40px;
+    text-decoration: none;
+}
+.search{
+    position: absolute;
+    top: 10px;
+    left: 75%;
+}
+.arjit-singh{
+    height: 400px;
+    width: 400px;
+}
+ .specific-artist{
+   display: flex;
+    width: 70%;
+    margin-top: 20px;
+    background-color: black!important;
+}
+.name{
+    margin-left: 10px;
+    position: absolute;
+    width: 510px;
+    left: 31%;
+    bottom: 45%;
+} 
+.Name{
+    display: block;
+}
+.NAME{
+    margin-bottom: 0;
+    font-size: larger;
+    margin-top: 2px;
+    
+}
+.date{
+    margin-top: 0;
+    font-size: small;
+}
+.artist-img{
+    height: 150px;
+    width: 150px;
+}
+.Artist{
+    margin-right: 50px;
+   margin-bottom: 10px;
+}
+.artist{
+   margin-right: 50px;
+   margin-bottom: 10px;
+   display: flex;
+}
+.artist-image{
+    height: 60px;
+    width: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.SIMILAR{
+    display: flex;
+}
+.bold{
+    font-weight: bolder;
+    font-size: x-large;
+}
+.Bold{
+    font-weight: bolder;
+    font-size: x-large;
+    margin-top: 0;
+}
+.side-section{
+position: absolute;
+top: 6%;
+left:70%;
+overflow: scroll;
+/*z-index: 9; */
+}
+aside{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 40px;
+    overflow-y: scroll;
+    height: 650px;
+    width: 370px;
+} 
+aside::-webkit-scrollbar{
+    display: none;
+}
+
+.player{
+    margin-left: 0;
+    border-style: groove;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 79px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    z-index: 100;
+    top: 570px;
+    background-color: black;
+
+}
+
+.audio-container{
+    border-radius: 15px;
+    box-shadow: 0 20px 20px 0 rgba(115, 125, 131);
+    display: flex;
+    padding: 10px 190px;
+    position: relative;
+    z-index: 100;
+    width: 70%;
+    background-color: red;
+}
+
+.img-container{
+    background-color: blue;
+width: 29%;
+height: 3.5rem;
+position: absolute;
+right: 70%;
+top: 7%;
+}
+
+.img-container img{
+    border-radius: 50%;
+    object-fit: cover;
+    height: 110px;
+    width: inherit;
+    position: absolute;
+    bottom: 0;
+    left: -150px;
+    animation: rotate 3s linear infinite;
+    animation-play-state: paused;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    position: absolute;
+    bottom: 8px;
+    left: 470px;
+    top: 40px;
+}
+.action-btn{
+    border: 0;
+    background-color: black;
+    color: orange;
+    font-size: 20px;
+    padding: 10px;
+    margin: 0px 20px;
+    cursor: pointer;
+}
+.action-btn.action-btn-big{
+    font-size: 30px;
+    transform: scale(0.5);
+}
+#next{
+    transform: scale(0.5);
+    font-size: 30px;
+}
+.action-button:focus{
+    outline: 0;
+}
+ .audio-info{
+    background-color: aqua;
+    color: black;
+    border: 15px 15px 0 0;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 245px;
+    /* padding: 10px 10px 10px 150px; */
+    /*opacity: 0;*/
+    transform: translateY(0%);
+    transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+    z-index: 0;
+    height: 65px;
+top: 7%;
+} 
+.audio-container.play .audio-info{
+opacity: 1;
+transform: translateY(-100%);
+}
+.audio-info h4{
+margin: 0;
+position: absolute;
+font-size: large;
+left: 36%;
+top: 15%;
+}
+
+.audio-info p{
+margin: 0;
+position: absolute;
+left: 36%;
+top: 45%;
+}
+
+.heartActive{
+position: absolute;
+top: 20%;
+/* background-color: white; */
+left: 90%;
+/* border: 2px solid red; */
+color: #eee;
+}
+
+.heartInactive::before{
+position: absolute;
+top: 20%;
+/* background-color: white; */
+left: 90%;
+/* border: 2px solid red; */
+color: #eee;
+}
+
+.heartActive::after{
+position: absolute;
+top: 20%;
+/* background-color: white; */
+left: 90%;
+/* border: 2px solid red; */
+color: rgb(249, 9, 9);
+}
+
+.progress-container{
+background: white;
+border-radius: 5px;
+cursor: pointer;
+margin: 10px 0;
+height: 4px;
+width: 150px;
+position: absolute;
+top: 5%;
+left: 41%;
+}
+
+input[type="range"] {
+position: relative;
+-webkit-appearance: none;
+width: 95%;
+margin: 0;
+padding: 0;
+height: 19px;
+margin: -3px 2.5% 20px 2%;
+float: left;
+outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+width: 100%;
+height: 3px;
+cursor: pointer;
+background: linear-gradient(to right, rgba(0, 125, 181, 0.6) var(--buffered-width), rgba(0, 125, 181, 0.2) var(--buffered-width));
+}
+ input[type="range"]::before {
+position: absolute;
+content: "";
+top: 8px;
+left: 0;
+width: var(--seek-before-width);
+height: 3px;
+background-color: #007db5;
+cursor: pointer;
+}
+ input[type="range"]::-webkit-slider-thumb {
+position: relative;
+-webkit-appearance: none;
+box-sizing: content-box;
+border: 1px solid #007db5;
+height: 15px;
+width: 15px;
+border-radius: 50%;
+background-color: #fff;
+cursor: pointer;
+margin: -7px 0 0 0;
+}
+input[type="range"]:active::-webkit-slider-thumb {
+transform: scale(1.2);
+background: #007db5;
+}
+ input[type="range"]::-moz-range-track {
+width: 100%;
+height: 3px;
+cursor: pointer;
+background: linear-gradient(to right, rgba(0, 125, 181, 0.6) var(--buffered-width), rgba(0, 125, 181, 0.2) var(--buffered-width));
+}
+ input[type="range"]::-moz-range-progress {
+background-color: #007db5;
+}
+ input[type="range"]::-moz-focus-outer {
+border: 0;
+}
+input[type="range"]::-moz-range-thumb {
+box-sizing: content-box;
+border: 1px solid #007db5;
+height: 15px;
+width: 15px;
+border-radius: 50%;
+background-color: #fff;
+cursor: pointer;
+}
+input[type="range"]:active::-moz-range-thumb {
+transform: scale(1.2);
+background: #007db5;
+}
+input[type="range"]::-ms-track {
+width: 100%;
+height: 3px;
+cursor: pointer;
+background: transparent;
+border: solid transparent;
+color: transparent;
+}
+input[type="range"]::-ms-fill-lower {
+background-color: #007db5;
+}
+input[type="range"]::-ms-fill-upper {
+background: linear-gradient(to right, rgba(0, 125, 181, 0.6) var(--buffered-width), rgba(0, 125, 181, 0.2) var(--buffered-width));
+}
+input[type="range"]::-ms-thumb {
+box-sizing: content-box;
+border: 1px solid #007db5;
+height: 15px;
+width: 15px;
+border-radius: 50%;
+background-color: #fff;
+cursor: pointer;
+}
+input[type="range"]:active::-ms-thumb {
+transform: scale(1.2);
+background: #007db5;
+}
+
+ .music-seek-bar{
+-webkit-appearance: none;
+width: 100%;
+position: absolute;
+top: -4px;
+height: 8px;
+background: var(--secondary-color);
+overflow: hidden;
+}
+
+/* .music-seek-bar::-webkit-slider-thumb{
+-webkit-appearance: none;
+height: 10px;
+width: 5px;
+background: var(--primary-color);
+cursor: pointer;
+box-shadow: -400px 0 0 400px var(--primary-color);
+}  */
+
+.current-time{
+position: absolute;
+top: -81%;
+right: 104%;
+width: 40px
+}
+
+.duration{
+position: absolute;
+top: -128%;
+right: -36%;
+width: 50px;
+}
+.progress{
+background-color: #000;
+border-radius: 5px;
+height: 5px;
+width: 50%;
+transition: width 0.1s linear;
+}
+#cover{
+height: 61px;
+width: 55%;
+position: absolute;
+top: -3px;
+left: 20%;
+}
+
+
+
+

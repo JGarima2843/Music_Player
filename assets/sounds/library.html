@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="library.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="container">
+          <div class="navbar">
+            <div class="logo">
+               <img src="" alt="">
+            </div>
+              <a href="#">Home</a>
+              <a href="#">Library</a>
+              <a href="#">download app</a>
+              <a href="#">sign in</a>
+          </div>
+  
+        </div>
+      </header>
+      <div>
+        <h1>Playlist</h1>
+        <div>
+          <a href="C:/Users/HP/Desktop/player/MUSIC PLAYER/liked.html">
+            <div class="liked-song">
+                <h2 class="fav">Liked song</h2>
+            </div>
+            </a>
+            <a href="C:/Users/HP/Desktop/player/MUSIC PLAYER/playlist.html">
+            <div class="playlist">
+              <div class="music">
+                <img src="https://previews.123rf.com/images/rastudio/rastudio1505/rastudio150501380/40151699-music-note-icon-thin-line-for-web-and-mobile-modern-minimalistic-flat-design-vector-dark-grey-icon-o.jpg" alt="">
+              </div>
+             <p> My playlist </p>
+             <img class="play-icon" src="https://thumbs.dreamstime.com/b/green-play-button-icon-vector-design-isolated-white-background-84313798.jpg" alt="play">
+            </div>
+            </a>
+        </div>
+      </div>
+      <div class="music-container">
+        <div class="audio-container" id="audio-container">
+          <div class="audio-info">
+            <div class="img-container">
+              <img src="https://pagalsong.in/uploads//thumbnails/300x300/Untitled-175.jpg" alt="music-cover" id="cover">
+            </div>
+              <h4 id="title">bekayali</h4>
+              <p>Sachent Tandon</p>
+              <a>
+              <i  class="fas fa-heart like heartActive red"  ></i>
+              </div> </div>
+              <div class="progress-container" id="progress-container">
+                <!-- <div class="progress">  -->
+                  <div class="seek-bar-container" id="progress">
+                    
+                    <p class="current-time hide" id="currTime">00 : 00</p>
+                    <!-- <input type="range" id="seek-slider" class="music-seek-bar" value="0"> -->
+                    <p class="duration hide" id="durTime">00 : 00</p>
+                </div>
+                </div>
+                
+                <audio src="music/Bekhayali.mp3" id="audio" data-name="audio"></audio>
+              
+                <div class="volume-container" id="volume-container" >
+                  <!-- <div class="progress">  -->
+                    <div class="Seek-bar-container" id="volume">
+                      
+                      <i class="fas fa-volume-mute" id="volume-icon" style="position: absolute;
+                      left: -18%;
+                      top: -9%;"></i>
+                      <!-- <input type="range" id="volumeslider" class="music-seek-bar volume-range" min="0" max="100" value="100"   > -->
+                      
+                    </div>
+                <div class="navigation">
+                  <i class="fas fa-random"></i>
+                  <button id="prev" class="action-btn action-btn-big">
+                    <i class="fas fa-backward "></i>
+                  </button>
+                  <button id="play" class="action-btn action-btn-big">
+                    <i class="fas fa-play" id="play"></i>
+                  </button>
+                  <button id="next" class="action-btn">
+                    <i class="fas fa-forward "></i>
+                  </button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                    <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>
+                    <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/>
+                  </svg>
+                </div>
+               <div>
+                <div>
+                  
+                </div>
+               
+               </div>
+          </div>
+  
+        </div>
+  
+      </div>
+</body>
+</html>

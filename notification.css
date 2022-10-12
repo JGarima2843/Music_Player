@@ -1,0 +1,27 @@
+.main{
+    background: #e91111;
+    height: 78px;
+    width: 170px;
+}
+
+.div1{
+    color: black;
+    text-align: center;
+    position: relative;
+    top: 9%;
+}
+
+.div2{
+    color: black;
+    position: relative;
+    text-align: center;
+    bottom: 9%;
+}
+
+hr{
+    width: 168px;
+    height: 1px;
+    background: black;
+    border: none;
+}
+
